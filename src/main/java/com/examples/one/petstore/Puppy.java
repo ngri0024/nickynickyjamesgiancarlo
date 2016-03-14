@@ -12,28 +12,28 @@ public class Puppy {
     
     //GETTERS
     
-    public void getID(int id){
-        id = this.id;
+    public int getID(){
+        return this.id;
     }
     
-     public void getName(String name){
-        name = this.name;
+     public String getName(){
+        return this.name;
     }
      
-      public void getBreed(String br){
-        br = this.breed;
+      public String getBreed(){
+        return this.breed;
     }
       
-       public void getLoadBark(boolean lb){
-        lb = this.loadBark;
+       public Boolean getLoadBark(){
+        return this.loadBark;
     }
        
-        public void getExercise(int erpd){
-        erpd = this.exerciseRequiredPerDay;
+        public int getExercise(){
+        return this.exerciseRequiredPerDay;
     }
         
-        public void getFriendly(boolean fwc){
-        fwc = this.friendlyWithChildren;
+        public Boolean getFriendly(){
+        return this.friendlyWithChildren;
     }
     //SETTERS
     public void setID(int id){
