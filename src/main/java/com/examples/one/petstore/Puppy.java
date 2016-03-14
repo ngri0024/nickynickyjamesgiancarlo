@@ -9,26 +9,28 @@ package com.examples.one.petstore;
  *
  * @author Giancarlo
  */
-public class Puppy {    
-    int id;
-    String name;
-    String breed;
-    boolean loadBark;
-    int exerciseRequiredPerDay;
-    boolean friendlyWithChildren;
+public class Puppy {
+
+    private int id;
+    private String name;
+    private String breed;
+    private boolean loadBark;
+    private int exerciseRequiredPerDay;
+    private boolean friendlyWithChildren;
     
-    public void newPup(){
+    
+    //SETTERS
+    public void setID(int id){
+        this.id=id;
+    }
+    public void newPup() {
         this.id = 0;
-        this.name = "bubu";
+        this.name = "labrador";
         this.breed = "pitbul";
-        this.loadBark = true;  
+        this.loadBark = true;
         this.exerciseRequiredPerDay = 1;
         this.friendlyWithChildren = true;
     }
-    
-    public static void main(String args[]){
-        Puppy p = new Puppy();
-        p.newPup();
-    }
-   
+
+    //getters
 }
