@@ -1,34 +1,73 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.examples.one.petstore;
 
-/**
- *
- * @author Giancarlo
- */
-public class Puppy {    
-    int id;
-    String name;
-    String breed;
-    boolean loadBark;
-    int exerciseRequiredPerDay;
-    boolean friendlyWithChildren;
+public class Puppy {
+    private int id;
+    private String name;
+    private String breed;
+    private boolean loadBark;
+    private int exerciseRequiredPerDay;
+    private boolean friendlyWithChildren;
     
-    public void newPup(){
+    
+    //GETTERS
+    
+    public void getID(int id){
+        id = this.id;
+    }
+    
+     public void getName(String name){
+        name = this.name;
+    }
+     
+      public void getBreed(String br){
+        br = this.breed;
+    }
+      
+       public void getLoadBark(boolean lb){
+        lb = this.loadBark;
+    }
+       
+        public void getExercise(int erpd){
+        erpd = this.exerciseRequiredPerDay;
+    }
+        
+        public void getFriendly(boolean fwc){
+        fwc = this.friendlyWithChildren;
+    }
+    //SETTERS
+    public void setID(int id){
+        this.id=id;
+    }
+    
+    
+     public void setName(String name){
+        this.name = name;
+    }
+     
+      public void setBreed(String br){
+        this.breed = br;
+    }
+      
+       public void setLoadBark(boolean lb){
+        this.loadBark = lb;
+    }
+       
+        public void setExercise(int erpd){
+        this.exerciseRequiredPerDay = erpd;
+    }
+        
+        public void setFriendly(boolean fwc){
+        this.friendlyWithChildren = fwc;
+    }
+        
+    public void newPup() {
         this.id = 0;
-        this.name = "bubu";
-        this.breed = "Labrador";
-        this.loadBark = true;  
+        this.name = "labrador";
+        this.breed = "pitbul";
+        this.loadBark = true;
         this.exerciseRequiredPerDay = 1;
         this.friendlyWithChildren = true;
     }
-    
-    public static void main(String args[]){
-        Puppy p = new Puppy();
-        p.newPup();
-    }
-   
+
 }
