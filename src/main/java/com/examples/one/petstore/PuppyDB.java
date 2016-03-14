@@ -36,6 +36,7 @@ public class PuppyDB {
 
     public boolean delPuppy(int id) {
         for (Puppy p : puppies) {
+            //Ffs fix this shit 
             if (p.getID() == id) {
                 puppies.remove(p);
                 return true;//autommatically breaks
