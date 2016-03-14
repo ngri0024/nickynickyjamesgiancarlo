@@ -20,7 +20,7 @@ public class Puppy {
     public void newPup(){
         this.id = 0;
         this.name = "bubu";
-        this.breed = "pitbul";
+        this.breed = "Labrador";
         this.loadBark = true;  
         this.exerciseRequiredPerDay = 1;
         this.friendlyWithChildren = true;
