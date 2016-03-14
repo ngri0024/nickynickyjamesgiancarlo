@@ -17,12 +17,10 @@ public class Kitten {
     public String breed;
     public boolean sensitiveToFeeding;
     
-    public boolean addKitten(){
+    public void newKitten(){
         
         this.id = 123;
         this.breed = "Persian";
         this.name = "James";
-        
-        return true;
     }
 }
