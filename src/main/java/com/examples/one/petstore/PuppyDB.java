@@ -25,7 +25,7 @@ public class PuppyDB {
     List<Puppy> puppies = new ArrayList<Puppy>();
 
     public boolean addPuppy(Puppy p) {
-        if (puppies.size()==10) {
+        if (puppies.size() == 10) {
             puppies.add(p);
             return true;
         } else {
@@ -33,15 +33,30 @@ public class PuppyDB {
         }
 
     }
-    
-     public boolean delPuppy(int id) {
-        if (puppies.size()==10) {
-            puppies.add(p);
-            return true;
-        } else {
-            return false;
-        }
 
+    public boolean delPuppy(int id) {
+        for (Puppy p : puppies) {
+            //Ffs fix this shit 
+            if (p.getID() == id) {
+                puppies.remove(p);
+                return true;//autommatically breaks
+            }
+        }
+        return false;
+    }
+
+    public Puppy getPuppy(int id) {
+        for (Puppy p : puppies) {
+            if (p.getID() == id) {
+                return p;
+            }
+        }
+        return null;
+    }
+
+    public int countPuppies() {
+
+        return puppies.size();
     }
 
 }
